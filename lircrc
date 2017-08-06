@@ -1,0 +1,15 @@
+# /etc/lirc/lircrc
+
+# steckdose tv on
+begin
+ prog = irexec
+ button = KEY_1
+ config = sudo send 11010 1 1
+end
+
+# steckdose tv off
+begin
+ prog = irexec
+ button = KEY_2
+ config = sudo send 11010 1 0
+end

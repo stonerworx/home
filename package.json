@@ -1,0 +1,21 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "url": "git@github.com:stonerworx/home.git",
+    "type": "git"
+  },
+  "author": "David Steiner <david@stonerworx.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "forever --uid home start app.js",
+    "stop": "forever stop home"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "forever": "^0.15.3",
+    "forever-service": "^0.5.10",
+    "localtunnel": "^1.8.3"
+  }
+}
